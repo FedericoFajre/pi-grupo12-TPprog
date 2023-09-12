@@ -3,6 +3,10 @@ a{
     color: black;
 }
 
+body{
+    background-color: plum;
+}
+
 
 #header{
     display: flex;
@@ -10,7 +14,7 @@ a{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    background-color: lightskyblue;
+    background-color: purple;
 }
 
 .listaHead{
@@ -47,6 +51,10 @@ a{
     align-items: center;
 }
 
+.secForm{
+    padding-right: 5px;
+}
+
 .bannerImg{
     width: 100%;
     height: 193px;
@@ -59,6 +67,10 @@ a{
     justify-content: space-evenly;
 }
 
+.tamaño{
+    width: 266px;
+    height: 189px;
+}
 
 
 
