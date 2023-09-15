@@ -5,6 +5,8 @@ a{
 
 body{
     background-color: plum;
+    padding: 0px;
+    margin: 0%;
 }
 
 
@@ -12,22 +14,39 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: purple;
+    width: 100%;
+}
+.botonBusqueda{
+    border-radius: 30px;
+
+}
+.letrasBusc{
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 
 .listaHead{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     list-style-type: none;
     padding: 0px;
-    font-size: larger;
+    font-size: 20px;
 }
 
 .listitaHead{
-    margin: 10px;
+    margin: 0px 50px;
+    color: aliceblue;
+    
+    
+}
+.letrasIndex{
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .secLogo{
@@ -53,6 +72,7 @@ body{
 
 .secForm{
     padding-right: 5px;
+    border-top: 100px;
 }
 
 .bannerImg{
@@ -131,7 +151,7 @@ span{
 .trailer{
     width: 225px;
     height: 40px;
-    margin-left: -10px;
+    margin-left: -30px;
     margin-top: 5px;
 }
 .titulofavoritos{
@@ -145,6 +165,7 @@ span{
     width: 200px;
 }
 .favs{
+    
     margin: 30px;
     padding: 50px;
 
@@ -152,11 +173,27 @@ span{
 }
 .PadreFavs{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+background-color:purple;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.contenedorFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-end;
 
-
+}
+.palabrasFooter{
+    padding: 50px;
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
 }
 
 @media(max-width: 390px){
