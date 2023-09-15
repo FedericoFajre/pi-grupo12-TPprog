@@ -5,6 +5,7 @@ a{
 
 body{
     background-color: plum;
+    margin: 0px;
 }
 
 
@@ -155,10 +156,45 @@ span{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-end;
-
-
 }
 
+
+.oculto{
+    display: none;
+}
 @media(max-width: 390px){
 
+    #header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: purple;
+    }
+
+    .padrePeli{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+    }
+
+    .hijoPeli{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secLogo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+    }
+
+    
+    
 }
