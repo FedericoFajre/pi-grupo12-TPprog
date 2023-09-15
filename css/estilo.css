@@ -134,6 +134,30 @@ span{
     margin-left: -10px;
     margin-top: 5px;
 }
+.titulofavoritos{
+    text-align: center;
+
+}
+.imgFavs{
+    display: flex;
+    flex-wrap: wrap;
+    height: 270px;
+    width: 200px;
+}
+.favs{
+    margin: 30px;
+    padding: 50px;
+
+
+}
+.PadreFavs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+
+}
 
 @media(max-width: 390px){
 
