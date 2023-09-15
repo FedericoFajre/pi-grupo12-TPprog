@@ -8,6 +8,10 @@ body{
     margin: 0px;
 }
 
+ul, li{
+    list-style-type: none;
+}
+
 
 #header{
     display: flex;
@@ -202,6 +206,22 @@ align-items: center;
     color: aliceblue;
 }
 
+
+
+.espacio{
+    height: 555px;
+}
+
+.espacioo{
+    height: 555px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.espacioo a{
+    font-size: larger;
+}
 @media(max-width: 390px){
 
     #header{
@@ -235,6 +255,28 @@ align-items: center;
         width: 350px;
     }
 
+    .container-imagenpeli{
+        padding: 0px;
+    }
+
+    .container-detallepeli{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenpeli{
+        width: 390px;
+    }
+
+    .espacio{
+        height: 0%;
+    }
+    .letraGenero{
+        font-size: 2em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: aliceblue;
+
+    }
     
     
 }
