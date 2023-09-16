@@ -12,6 +12,10 @@ ul, li{
     list-style-type: none;
 }
 
+.letrasIndex{
+    color: black;
+    font-family: cursive;
+}
 
 #header{
     display: flex;
@@ -160,6 +164,13 @@ span{
 }
 .titulofavoritos{
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.tituloFavs{
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 40px;
 
 }
 .imgFavs{
@@ -222,6 +233,54 @@ align-items: center;
 .espacioo a{
     font-size: larger;
 }
+.hijoGenero{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30px;
+    padding-right: 50px;
+    font-size: 24px;
+
+}
+.estreno{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+.favos{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: medium;
+
+}
+.titulogenero{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.textogenero{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    gap: 15;
+}
+.botonFav{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 40px;
+    padding: 30px -1px 10px 0px;
+
+}
+.anashe{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
 @media(max-width: 390px){
 
     #header{
@@ -270,12 +329,6 @@ align-items: center;
 
     .espacio{
         height: 0%;
-    }
-    .letraGenero{
-        font-size: 2em;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: aliceblue;
-
     }
     
     
