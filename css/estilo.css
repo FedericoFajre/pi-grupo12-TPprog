@@ -330,6 +330,13 @@ align-items: center;
     .espacio{
         height: 0%;
     }
+
+    .PadreFavs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     
     
 }
