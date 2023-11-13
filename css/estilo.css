@@ -12,10 +12,6 @@ ul, li{
     list-style-type: none;
 }
 
-.letrasIndex{
-    color: black;
-    font-family: cursive;
-}
 
 #header{
     display: flex;
@@ -54,6 +50,9 @@ ul, li{
 .letrasIndex{
     color: aliceblue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    text-wrap: wrap;
+    width: 200px;
 }
 
 .secLogo{
@@ -97,7 +96,7 @@ ul, li{
 
 .tamaño{
     width: 266px;
-    height: 189px;
+    height: 399px;
 }
 
 .secGenero{
@@ -304,6 +303,7 @@ align-items: center;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
 
     .secLogo{
