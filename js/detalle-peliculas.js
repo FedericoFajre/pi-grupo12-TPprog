@@ -29,8 +29,13 @@ nombrePeli.innerText = data.original_title;
 calificacion.innerText = "Rating: " +  data.vote_average;
 fecha.innerText = "Fecha de estreno: " + data.release_date;
 sinopsis.innerText = data.overview;
-genero.innerText = data.genres
 duracion.innerText = "Duración: " + data.runtime + " minutos";
+
+
+for (let i = 0; i < data.genres.length; i++) {
+    genero.innerHTML += `<p><a class= "hCuatro" href="./detalle-genero.html?id=${data.genres[i].id}">${data.genres[i].name}</a></p>`;
+        
+}
 
 
 

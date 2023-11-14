@@ -28,7 +28,11 @@ nombreSerie.innerText = data.name;
 calificacion.innerText = "Rating: " +  data.vote_average;
 fecha.innerText = "Fecha de estreno: " + data.first_air_date;
 sinopsis.innerText = data.overview;
-genero.innerText = data.genres
+
+for (let i = 0; i < data.genres.length; i++) {
+    genero.innerHTML += `<p><a class= "hCuatro" href="./detalle-genero.html?id=${data.genres[i].id}">${data.genres[i].name}</a></p>`;
+        
+}
 
 
 
