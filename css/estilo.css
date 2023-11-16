@@ -148,6 +148,11 @@ h4{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
 }
+
+.hCuatro{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
 span{
     color: black;
 }
@@ -223,7 +228,6 @@ align-items: center;
 }
 
 .espacioo{
-    height: 555px;
     display: flex;
     justify-content: space-around;
 
