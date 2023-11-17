@@ -284,6 +284,21 @@ align-items: center;
     justify-content: left;
 }
 
+.popu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    font-size: 17px;
+    margin: 0px;
+}
+
+.pelis{
+    height: 270px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
 @media(max-width: 390px){
 
     #header{
