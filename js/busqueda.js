@@ -1,5 +1,6 @@
-let form = document.querySelector("form");
-let input = document.querySelector("input");
+let form = document.querySelector(".busda");
+let input = document.querySelector(".botonBusqueda");
+
             
 form.addEventListener("submit", function(e){
     e.preventDefault();
@@ -16,18 +17,12 @@ form.addEventListener("submit", function(e){
 /* Resultados de busqueda */
 let acaVaLaAPIKey = "ba751b79f4d33c473bf6d1b115cc817d";
 
-let querystring = location.search
-let qsToObject = new URLSearchParams(querystring)
-let datoAb = qsToObject.get("buscar")
+let qs = location.search
+let qsObjLit = new URLSearchParams(qs);
+let datoAb = qsObjLit.get("buscar");
+console.log(datoAb);
 
-let busqueda = document.querySelector(".titulos")
-busqueda.innerHTML += `<h2>Search results for <i>${datoAb}</i></h2>`
-
-let titulos = document.querySelector (".titulos")
-let pelis = document.querySelector (".PadrePeli")
-let imagen = document.querySelector (".tamaño")
-
-let url = `https://api.themoviedb.org/3/search/movie?query=${datoAb}&${acaVaLaAPIKey}&include_adult=false&language=en-US&page=1`;
+let url = `https://api.themoviedb.org/3/search/movie?api_key=${acaVaLaAPIKey}&query=${datoAb}`;
 
 fetch(url)
     .then(function(response){
@@ -36,14 +31,29 @@ fetch(url)
     .then(function(data){
         console.log(data);
         
-        let seccionBuscador= document.querySelector(".oculto");
-        let mensaje = document.querySelector(".mensaje")
+        let seccionBuscador= document.querySelector(".seccionBuscador");
+        let mensaje = document.querySelector(".mensajeBuscador")
 
         if(data.results.length == 0){
             mensaje.innerHTML = `No se ha encontrado resultado de busqueda para:  <span> ${datoAb}</span>`
         }
         else{
             mensaje.innerHTML = `Resultado de busqueda para:  <span>${datoAb}</span>`
-            for(let i=0; i<2; i++){    //Mostramos 2 pelis
+            for(let i=0; i<4; i++){ 
+                if (data.results[i].poster_path !== null) {
                 seccionBuscador.innerHTML += `<article class="popu">
-                    <a href="./detalles-peliculas.html?id=${data.results[i].id}"><img class="pelis" 
+                    <a href="./detalle-peliculas.html?id=${data.results[i].id}"><img class="pelis" src= "https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt=""> 
+                    </a>
+                    <strong>${data.results[i].original_title}</strong>
+                    <p>${data.results[i].release_date}</p>
+                </article>`;
+    
+            }
+        }
+        }
+    })
+
+    .catch(function(error){
+        console.log("Error: " + error);
+    })
+                   

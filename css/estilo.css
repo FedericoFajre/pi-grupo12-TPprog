@@ -298,6 +298,23 @@ align-items: center;
     width: 200px;
     margin-bottom: 10px;
 }
+.seccionBuscador{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.mensajeBuscador{
+    flex-wrap:wrap;
+    display: flex;
+    align-items: center;
+    color:  rgb(236, 189, 118);
+    font-size: 20px;
+    height: 9vh;
+    text-decoration: none;
+    font-family:'Bebas Neue', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
 
 @media(max-width: 390px){
 
