@@ -46,4 +46,4 @@ fetch(url)
             mensaje.innerHTML = `Resultado de busqueda para:  <span>${datoAb}</span>`
             for(let i=0; i<2; i++){    //Mostramos 2 pelis
                 seccionBuscador.innerHTML += `<article class="popu">
-                    <a href="./detalles-peliculas.html?id=${data.results[i].id}"><img class="pelis" 
+                                                <a href=./detalles-peliculas.html?id=${data.results[i].id}><img class="pelis"'
