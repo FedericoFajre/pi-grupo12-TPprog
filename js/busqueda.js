@@ -42,7 +42,6 @@ fetch(url)
             for(let i=0; i<4; i++){ 
                 if (data.results[i].poster_path !== null) {
                 seccionBuscador.innerHTML += `<article class="popu">
-<<<<<<< HEAD
                     <a href="./detalle-peliculas.html?id=${data.results[i].id}"><img class="pelis" src= "https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt=""> 
                     </a>
                     <strong>${data.results[i].original_title}</strong>
@@ -58,6 +57,3 @@ fetch(url)
         console.log("Error: " + error);
     })
                    
-=======
-                                                <a href=./detalles-peliculas.html?id=${data.results[i].id}><img class="pelis"'
->>>>>>> ab5050cff26e7a0aac08d5945710f6139bee19d8

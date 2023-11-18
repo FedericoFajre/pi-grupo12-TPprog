@@ -16,7 +16,7 @@ fetch(urlP)
        contenido += `
 
            <ul class="hijoGenero">                
-               <li><a class="textogenero" href="./detalle-genero.html?id=${data.genres[i].id}">${data.genres[i].name}</a></li>
+               <li><a class="textogenero" href="./detalle-genero.html?id=${data.genres[i].id}&tipo=movie">${data.genres[i].name}</a></li>
            </ul>`
 
    }
@@ -49,7 +49,7 @@ fetch(urlS)
        contenido += `
 
            <ul class="hijoGenero">                
-               <li><a class="textogenero" href="./detalle-genero.html?id=${data.genres[i].id}">${data.genres[i].name}</a></li>
+               <li><a class="textogenero" href="./detalle-genero.html?id=${data.genres[i].id}&tipo=tv">${data.genres[i].name}</a></li>
            </ul>`
 
    }
