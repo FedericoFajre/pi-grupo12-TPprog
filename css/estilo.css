@@ -278,7 +278,7 @@ align-items: center;
     padding: 30px -1px 10px 0px;
 
 }
-.anashe{
+.favo{
     display: flex;
     align-items: center;
     justify-content: left;
@@ -316,6 +316,13 @@ align-items: center;
     font-family:'Bebas Neue', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
 
+.escondido{
+    display: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
 @media(max-width: 390px){
 
     #header{
@@ -325,6 +332,15 @@ align-items: center;
         justify-content: space-between;
         align-items: center;
         background-color: purple;
+    }
+
+    .listaHead{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0px;
+        font-size: 20px;
     }
 
     .padrePeli{
@@ -374,5 +390,11 @@ align-items: center;
         flex-direction: column;
     }
     
+    .escondido{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+    }
     
 }

@@ -23,16 +23,16 @@ console.log(id);
 
 let acaVaLaAPIKey = "ba751b79f4d33c473bf6d1b115cc817d";
 
-let urlgeneroP = `https://api.themoviedb.org/3/genre/movie/list?api_key=${acaVaLaAPIKey}`;
-
+let urlgeneroP = `https://api.themoviedb.org/3/discover/movie?api_key=${acaVaLaAPIKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${id}&with_watch_monetization_types=flatrate`;
 fetch(urlgeneroP)
-.then(function(response) {
-  return response.json()
-})
-.then(function(data) {
-    
+    .then(function(response)
+    {
+      return response.json()  
+    })
+    .then(function(data)
+    {
+        console.log(data);
+        let titulo = document.querySelector("h2")
+        titulo.innerHTML += `<h1> Peliculas de ${data.name}</h1>`
+    })  
 
-})
-.catch(function(error) {
-  console.log("Error: " + error);
-});
